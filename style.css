@@ -1,0 +1,68 @@
+body {
+  font-family: 'Arvo', serif;
+}
+
+a {
+  color: #3e7786;
+}
+
+#page {
+  max-width: 600px;
+  padding: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  #page {
+    max-width: 90%;
+    padding: 10px 0;
+    margin: 0 auto;
+    font-size: 8pt;
+  }
+}
+
+.image {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.image > img {
+  width: 100px;
+  height: 100px;
+}
+
+.about {
+  color: #292929;
+}
+
+.about__header {
+  font-weight: bolder;
+  font-size: 2.8em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about__text, .about__contact {
+  font-size: 1.3em;
+}
+
+.about__text {
+  margin: 0 0 10px;
+}
+
+.about__contact > span:first-child {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #f0f0f0;
+}
+
+@media screen and (max-width: 600px) {
+  .about__contact > span:first-child {
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+}
